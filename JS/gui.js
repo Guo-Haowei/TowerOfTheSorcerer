@@ -24,17 +24,12 @@ var hero = {
         }
     },
     
-    battle: function(monster, ctx) {
-        battle_with = monster.type;
-        var damage = this.expected_damage(monster);
-        if (damage >= this.hp) return;
+    battle: function(hp_cost) {
+
+	 if (hp_cost >= this.hp) return -1;
         else {
-            this.hp -= damage;
+            this.hp -= hp_cost;
         }
-        console.log("hp is "+this.hp);
-        console.log("attack is "+this.offence);
-        console.log("defence is "+this.defence);
-        console.log("keys:"+this.yellow_key+' '+this.blue_key+' '+this.red_key);
     },
     
     item: function(type) {
@@ -272,7 +267,7 @@ function changeGameState(index, type) {
             return;
         }
         else {
-            hero.battle(a_monster, ctx);
+            hero.battle(e_d);
             tower[floor][index] = 0;
         }
         tower[floor][index] = 0;
@@ -346,14 +341,3 @@ function check(e) {
     } // some more keys
     cantMoveTo = false;
 }
-
-/*
-<button onclick="myFunction()">Show dialog</button>
-    <dialog id="myDialog">This is a dialog window</dialog>
-
-    <script>
-        function myFunction() {
-            document.getElementById("myDialog").showModal();
-        }
-    </script>
-*/

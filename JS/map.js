@@ -34,7 +34,22 @@ function draw_map() {
             var index = y * 11 + x;
             var type = tower[floor][index];
             switch (type) {
-                case TOT.REMOVE_WALL:
+                case TOT.TILE:
+                    draw_help(ctx, x, y, tile);
+                    break;
+                case TOT.LAVA:
+                    draw_help(ctx, x, y, lava);
+                    break;
+				case TOT.WALL1:
+                    draw_help(ctx, x, y, wall1);
+                    break;
+				case TOT.UP:
+					draw_help(ctx, x, y, up);
+					break;
+				case TOT.DOWN:
+					draw_help(ctx, x, y, down);
+					break;
+				case TOT.REMOVE_WALL:
                     draw_help(ctx, x, y, wall2);
                     break;
                 case TOT.REMOVE_LAVA:
