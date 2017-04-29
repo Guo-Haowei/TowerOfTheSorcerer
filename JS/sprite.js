@@ -5,14 +5,14 @@ life, offense, defence
 1.green_slime, red_slime, big_slime, slime_lord, far_seer,
 2 bat, big_bat, vampire_bat, elite_bat, merchant,
 3 skeleton, skeleton_knight, yellow_skeleton_knight, elite_skeleton_knight, thief,
-4 perist, yellow_persist, red_persist, magician, superion_magician, 
-5 zombie, zombie_knight, elite_zombie_knight, swordsman, superion_swordsman, 
-6 golden_knight, blue_knight, knight, gate_guardian, superion_gate_guardian, 
+4 priest, yellow_priest, red_priest, magician, superior_magician, 
+5 zombie, zombie_knight, elite_zombie_knight, swordsman, superior_swordsman, 
+6 golden_knight, blue_knight, red_knight, gate_guardian, superior_gate_guardian, 
 7 blue_magician, green_magician, yellow_magic_sergeant, red_magic_sergeant, princess, 
-8 rock, superion_rock, ghost_soldier, soldier, dark_knight
+8 rock, superior_rock, ghost_soldier, soldier, dark_knight
 9 great_magician, vampire, slime_man, elite_slime_man, 
   warp_staff, great_warp_staff
-10 ... dragon_slayer,
+10 player, dragon_slayer
 11 iron_sword, knight_sword, silver_sword, holy_sword, sacred_sword,
 12 iron_shield, knihgt_shield, sliver_shield, holy_shield, sacred_shield,
 cristal, 
